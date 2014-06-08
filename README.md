@@ -9,3 +9,5 @@ Uses http://cmall.github.io/LocalHomePage/ for the website dev part. I edited th
 ![opening page](http://i.imgur.com/9Jh2q7T.png)
 
 ![http://cmall.github.io/LocalHomePage/](http://i.imgur.com/sV131b5.png)
+
+![kanban](http://imgur.com/2b7i9Ng.png)

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!--shottily designed by Kevin Law @thatarchguy-->
 <!--LocalHomePage Originally by @cmall -->
+<!--KanBan Originally by @alexisgo -->
 
 <html>
 <head>
@@ -8,6 +9,7 @@
 <title>@localhost</title>
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/kanban.css">
 
 <?php require('config.php'); ?>
 </head>
@@ -21,7 +23,7 @@
       <ul>
         <li id="tabHeader_1">life</li>
         <li id="tabHeader_2">dev</li>
-        <li id="tabHeader_3">git</li>
+        <li id="tabHeader_3">todo</li>
       </ul>
       
       <a href="http://time.is/Atlanta" id="time_is_link"></a>
@@ -145,9 +147,43 @@
      
       </div>
       <div class="tabpage" id="tabpage_3">
-        <h2>git</h2>
-        <p>Add stuff, copy template from "life" section. Do whatever.</p>
-      </div>
+        <h2 align='center'>To Do</h2>
+
+      <!-- initiate Kanban -->
+        <div id="todo">
+          <div class="title">To Do</div>
+            <div id="item1" draggable="true">
+              <div class="cardTitle">
+                  Get Stuff
+              </div>
+            </div>
+            <div id="item2" draggable="true">
+              <div class="cardTitle">
+                   Learn stuff
+              </div>
+            </div>
+            <div id="item3" draggable="true">
+              <div class="cardTitle">
+                  Forget stuff
+              </div>
+            </div>
+        </div>
+
+        <div id="inprogress">
+          <div class="title">In Progress</div>
+        </div>
+      
+        <div id="done">
+          <div class="title">Done</div>
+        </div>
+
+      <div style='clear:both'></div>
+    
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="js/dragndrop.js"></script>
+        <div style='clear:both'></div>
+    
+
     </div>
   </div>
 <script src="js/tabs.js"></script>
